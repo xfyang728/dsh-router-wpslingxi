@@ -1,0 +1,9 @@
+# dsh-router-wpslingxi bundle patch
+#
+# Mounts dsh-router-wpslingxi into the DSH cordis bundle stack. This plugin
+# provides the `router.suppliers` cordis service (host half) so dsh-router can
+# load the wpslingxi supplier. Install BEFORE dsh-router (or any order —
+# dsh-router defers via ctx.inject until the service is available).
+- insert:
+    - id: dsh-router-wpslingxi
+      name: 'dsh-router-wpslingxi'
