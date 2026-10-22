@@ -4,6 +4,10 @@ DSH 插件：为 [dsh-router](https://github.com/CARVIN94/dsh-router) 提供 **W
 
 仿 [dsh-router-traework](https://github.com/CARVIN94/dsh-router-traework) 的独立供应商插件结构（自含契约，不依赖 dsh-router 包）。
 
+> **凭证说明**：本插件用你自己的 `wps_sid` cookie 调上游，凭证只存在 DSH 本地凭证库
+> （`~/.dsh/profiles/<profile>/data/auths/credentials.sqlite`），不进代码、不进仓库。
+> 下面的调试记录里出现的 cookie 值都是本地抓包原文，**不要提交**（已在 `.gitignore` 里挡掉）。
+
 ## 能力（真机实测）
 
 | 能力 | 状态 |
